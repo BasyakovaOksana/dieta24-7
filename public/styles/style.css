@@ -1,0 +1,403 @@
+body {
+    background-image: url("../images/background.jpg");
+}
+
+#app {
+    background-color: rgba(000, 000, 000, 0.5);
+}
+
+header {
+    padding: 1% 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #000;
+}
+
+.search, #title {
+    display: inline-block;
+    padding: 5% auto auto 10%;
+}
+
+h1 {
+    padding: 2%;
+    font-family: "Yeseva One";
+    text-align: center;
+    font-size: 50px;
+}
+
+p {
+    font-family: Lora;
+    font-size: 20px;
+    padding: 1% 2%;
+}
+
+.search {
+    margin: auto 2% 2% 80%;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    box-shadow: 5px 5px 5px;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #000;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.navigation > li {
+    display: inline-block;
+    padding: 2%;
+    font-size: 26px;
+    font-family: Lora;
+    list-style: none;
+    position: relative;
+}
+
+nav {
+    background-color: #65A12C;
+    color: #000;
+}
+
+ul {
+    text-align: center;
+}
+
+section {
+    padding: 2%;
+    text-align: justify;
+    color: #000;
+}
+
+footer {
+    background-color: #65A12C;
+    text-align: center;
+    color: #000;
+}
+
+.headerPages {
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+}
+
+li {
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.navigation > li:hover {
+    background-color: #9ABC65;
+}
+
+.list > li {
+    display: block;
+}
+
+.list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -999px;
+    border-top: 10px solid transparent;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.navigation > li:hover, .list > li:hover {
+    position: relative;
+}
+
+.navigation > li:hover {
+    z-index: 2;
+}
+
+.list > li:hover {
+    z-index: 1;
+    background-color: #65A12C;
+}
+
+.navigation > li:hover > .list {
+    top: 100%;
+    opacity: 1;
+    background-color: #D6E794;
+    width: 96%;
+    padding: 2%;
+    font-size: 20px;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex {
+    border: 2px solid #000;
+    padding: 2%;
+    margin: 2%;
+}
+
+.flexHeader {
+    font-size: 26px;
+    color: #402F28;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.flexList > li {
+    text-decoration: none;
+    display: block;
+}
+
+h3 {
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1%;
+}
+
+.nutrientHeader {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nutrientContent {
+    padding: 1% 5%;
+    font-size: 20px;
+    background-size: cover;
+}
+
+.manContent {
+    display: flex;
+}
+
+.man {
+    width: 450px;
+    height: 500px;
+    margin: 2% 5%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.manHeader {
+    font-size: 30px;
+    text-align: center;
+    font-family: "Yeseva One";
+}
+
+.sectionContent {
+    color: #000;
+}
+
+.img {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+img {
+    width: 100%;
+    background-size: cover;
+    height: 500px;
+}
+
+.top-right {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-family: Lora;
+    padding: 1%;
+}
+
+.links > a {
+    color: #000;
+    padding: 0 25px;
+    font-size: 13px;
+    font-family: Lora;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container {
+    background-size: cover;
+    background-color: #EFF3BE;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    padding: 1%;
+    margin: 2% 10%;
+    position: relative;
+}
+
+.card {
+    margin: 2% 20%;
+    font-family: Lora;
+    font-size: 20px;
+    color: #000;
+}
+
+.blog {
+    margin: 0 2%;
+    padding: 0 2%;
+    text-align: justify;
+    color: #000;
+}
+
+.contentComment {
+    margin: 0 auto;
+    font-family: Lora;
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+
+.create {
+    text-align: right;
+    font-family: Lora;
+    font-size: 20px;
+    padding-bottom: 1%;
+}
+
+.user {
+    text-align: right;
+    padding-bottom: 1%;
+}
+
+.title {
+    text-align: center;
+    font-family: Lora;
+    font-size: 24px;
+    padding: 5% 2% 2% 2%;
+}
+
+.link {
+    text-decoration: blink;
+    color: red;
+}
+
+#comments {
+    width: 40%;
+    height: 150px;
+    margin: 0 10%;
+}
+
+.label {
+    font-family: Lora;
+    font-size: 24px;
+    text-align: center;
+    padding: 1%;
+    display: block;
+    text-transform: uppercase;
+}
+
+input {
+    margin: 2%;
+}
+
+.content {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    font-family: Lora;
+    font-size: 20px;
+}
+
+.gradientHide {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(239, 243, 190, 0.3) 0%, rgba(239, 243, 190, 0.9) 100%);
+    cursor: pointer;
+}
+
+.fa {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    font-size: 60px;
+    color: #000;
+}
+
+.fa-angle-up {
+    display: none;
+}
+
+.compact {
+    height: auto;
+    padding-bottom: 90px;
+}
+
+.content.compact .fa-angle-down {
+    transform: rotate(180deg);
+    transition: 0.4s;
+}
+
+.fa-angle-down {
+    display: inline;
+}
+
+.fa-angle-down::before {
+    content: "\f107";
+}
+
+#upbutton {
+    background: url("../images/button1.png") no-repeat top left;
+    height: 70px;
+    width: 70px;
+    bottom: 30px;
+    right: 2%;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 999;
+}
+
+@media (max-width: 700px) {
+    .top-right {
+        margin-bottom: 1%;
+        padding-bottom: 1%;
+    }
+    #title {
+        margin-top: 1%;
+        padding-top: 1%;
+    }
+    .manContent {
+        display: none;
+    }
+}
+
+.NameAdmin {
+    font-family: Lora;
+    font-size: 18px;
+    padding: 1% 2%;
+}
+
+.navbar {
+    background-color: #65A12C;
+}
+
+.main-sidebar {
+    background-color: #183223;
+}
+
