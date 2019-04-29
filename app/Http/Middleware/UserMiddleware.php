@@ -16,7 +16,7 @@ class UserMiddleware
     public function handle($request, Closure $next)
     {
         if ($request->input('role') == 'user') {
-            return redirect('home');
+            return redirect('/');
         }
         return $next($request);
     }
